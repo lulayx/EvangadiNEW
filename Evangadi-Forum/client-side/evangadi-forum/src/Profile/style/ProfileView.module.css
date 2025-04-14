@@ -1,0 +1,149 @@
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  margin-top: 70px;
+}
+
+.loadingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border-top-color: #2563eb;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.alert,
+.info {
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.alert {
+  background-color: #fee2e2;
+  color: #ef4444;
+  border-left: 4px solid #ef4444;
+}
+
+.info {
+  background-color: #dbeafe;
+  color: #3b82f6;
+  border-left: 4px solid #3b82f6;
+}
+
+.profileSection {
+  margin-top: 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1f2937;
+  /* margin-bottom: 1.5rem; */
+  text-align: center;
+}
+
+.profileCard {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  padding: 2rem;
+}
+
+.profileList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.profileItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.label {
+  font-weight: 500;
+  color: #1f2937;
+}
+
+.value {
+  color: #6b7280;
+}
+
+.divider {
+  height: 1px;
+  background-color: #e5e7eb;
+  margin: 0.5rem 0;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.edit {
+  padding: 1px 0 !important;
+  height: 40px;
+  /* width: auto; */
+  font-size: 18px;
+  border: 1px solid #2563eb;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.edit:hover {
+  background-color: #1d4ed8;
+}
+
+.changeButton {
+  background-color: white;
+  color: #2563eb;
+  border: 1px solid #2563eb;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 1px 0 !important;
+  height: 40px;
+  width: 286px !important;
+  font-size: 18px;
+}
+
+.changeButton:hover {
+  background-color: #e5e7eb;
+  border-color: #1d4ed8;
+  color: #1d4ed8;
+}
+
+@media (max-width: 768px) {
+  .profileItem {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .buttonGroup {
+    flex-direction: column;
+  }
+}

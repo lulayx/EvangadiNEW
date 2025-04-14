@@ -1,0 +1,260 @@
+/* Name fields container */
+.name__fields {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+}
+
+/* Input group within name fields */
+.name__fields .inputGroup {
+  flex: 1;
+  min-width: 0; /* Prevent inputs from overflowing */
+}
+
+/* First name and last name inputs */
+.name__fields input {
+  width: 100%;
+  padding: 8px;
+  margin: 9px 0;
+  box-sizing: border-box;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .name__fields {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .name__fields .inputGroup {
+    width: 100%;
+  }
+}
+
+/* Rest of your existing CSS remains the same */
+.errorBorder {
+  border: 1px solid red !important;
+}
+
+.form__wrapper {
+  display: flex;
+  justify-content: end;
+  padding-top: 5%;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 11px;
+  width: 100%;
+}
+
+.signup__container {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: white;
+  padding: 10px;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.signup__container input {
+  display: flex;
+  justify-content: center;
+  width: 96%;
+  padding: 8px;
+  margin: 9px 0;
+}
+
+.Signin {
+  color: #ff8502;
+  text-decoration: none;
+}
+
+.Signin:hover {
+  color: blue;
+}
+
+.agree {
+  margin-top: 7px;
+  background-color: #516cf0 !important;
+}
+
+.terms {
+  font-size: 15px;
+}
+
+.pp_terms {
+  color: #ff8502;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.pp_terms:hover {
+  color: blue;
+}
+.link {
+  text-decoration: none;
+}
+
+button {
+  width: 100% !important;
+  padding: 10px;
+  background-color: #5069f0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ffbf7a;
+}
+
+button:disabled {
+  background-color: #ccc;
+}
+
+.account__user {
+  color: #ff8502;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.success {
+  color: green;
+  font-size: 12px;
+}
+
+.inputError {
+  border: 1px solid red !important;
+  outline: none;
+}
+
+.inputError:focus {
+  border-color: red;
+  box-shadow: 0 0 3px red;
+}
+
+.passwordWrapper {
+  position: relative;
+  width: 100%;
+}
+.success {
+  color: #00c851;
+  background-color: #e8f5e9;
+  padding: 0.8rem;
+  border-radius: 4px;
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 16px;
+}
+
+.passwordWrapper input {
+  width: 100%;
+  padding: 10px;
+  padding-right: 40px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.eyeIcon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  color: #888;
+  z-index: 1;
+}
+div a {
+  font-size: 16px;
+}
+
+/* for admin page */
+.adminToggle {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.adminToggle label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 14px;
+  color: #666;
+}
+
+.adminToggle input[type="checkbox"] {
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.passwordWrapper {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.passwordInputContainer {
+  position: relative;
+  width: 100%;
+}
+
+.passwordInput {
+  width: 100%;
+  padding-right: 40px;
+}
+
+.passwordToggle {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #666;
+  padding: 5px;
+  width: 37px !important;
+}
+.passwordToggle:hover {
+  color: #333;
+  background: transparent;
+}
+.error {
+  color: #ff4444;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.success {
+  color: #00c851;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .form__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .signup__container {
+    width: 90%;
+  }
+  .name__fields input {
+    box-sizing: content-box;
+  }
+}

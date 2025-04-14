@@ -1,0 +1,272 @@
+/* .navbarwrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #ffffff;
+  gap: 40px;
+  height: 80px;
+  position: fixed;
+  border-bottom: 1px solid grey;
+}
+
+.logo {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+
+  height: 94px;
+}
+
+.logo img {
+  height: 20px;
+  width: 139px;
+  padding-right: 125px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  width: 50%;
+  height: 94px;
+  padding-right: 116px;
+}
+div a {
+  text-decoration: none;
+  color: black;
+  font-size: 19px;
+}
+
+.signin {
+  cursor: pointer;
+  padding: 10px 20px;
+  padding: 10px 60px;
+  border: none;
+  border-radius: 10px;
+  background-color: #516cf1;
+  border-color: #516cf1;
+  color: white;
+  width: 183px;
+}
+.signin:hover {
+  background-color: #3a5ad3;
+  transform: scale(1.05);
+}
+
+.signout {
+  cursor: pointer;
+  padding: 10px 20px;
+  padding: 10px 60px;
+  border: none;
+  border-radius: 10px;
+  background-color: #516cf1;
+  border-color: #516cf1;
+  color: white;
+  width: 183px !important;
+}
+
+.signout:hover {
+  background-color: #3a5ad3;
+  transform: scale(1.05);
+}
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    width: 100%;
+    display: none;
+  }
+
+  .navbar.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    height: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbarwrapper {
+    padding: 10px;
+  }
+
+  .navbar {
+    gap: 20px;
+  }
+
+  .logo img {
+    width: 100px;
+  }
+
+  .signin,
+  .signout {
+    padding: 10px 25px;
+  }
+}
+.works:hover {
+  color: #fe7f08;
+  transform: scale(1.05);
+}
+
+.home:hover {
+  color: #fe7f08;
+  transform: scale(1.05);
+} */
+
+/* new css */
+.navbarwrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  width: 100%;
+  background-color: #ffffff;
+  height: 80px;
+  position: fixed;
+  border-bottom: 1px solid grey;
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.logo img {
+  height: 20px;
+  width: auto;
+  max-width: 139px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 50px;
+  height: 100%;
+  width: 50%;
+}
+
+.navbar a,
+.navbar button {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover,
+.home button:hover {
+  color: #fe7f08;
+  transform: scale(1.05);
+}
+
+.signin,
+.signout {
+  cursor: pointer;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #516cf1 !important;
+  color: white;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.signin:hover,
+.signout:hover {
+  background-color: #516cf1;
+  transform: scale(1.05);
+}
+.signout,
+.signin {
+  padding: 10px 0px !important;
+  width: 140px !important;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .navbarwrapper {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px 20px;
+  }
+  .navbarwrapper {
+    gap: 0px;
+  }
+
+  .logo {
+    order: 1;
+    flex: 1;
+  }
+
+  .hamburger {
+    display: block;
+    order: 2;
+  }
+
+  .navbar {
+    display: none;
+    order: 3;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 15px 0;
+    gap: 15px;
+    align-items: flex-start;
+  }
+
+  .navbar.open {
+    display: flex;
+  }
+
+  .navbar a,
+  .navbar button {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 18px;
+  }
+
+  .signin,
+  .signout {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo img {
+    max-width: 120px;
+  }
+
+  .navbar {
+    padding: 0px 5px;
+  }
+}
