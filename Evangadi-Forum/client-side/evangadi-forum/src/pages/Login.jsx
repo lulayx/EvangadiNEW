@@ -70,7 +70,7 @@ function Login() {
 
     try {
       const { data } = await axios.post(
-        "https://evangadi-api.digitalyibeltal.com/api/users/login",
+        "https://server-side-r4vi.onrender.com/api/users/login",
         {
           email: emailValue,
           password: passValue,

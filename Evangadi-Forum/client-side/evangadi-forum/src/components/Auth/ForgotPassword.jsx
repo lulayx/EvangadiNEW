@@ -13,7 +13,7 @@ function ForgotPassword() {
     setIsLoading(true);
     try {
       const response = await axios.post(
-        "https://evangadi-api.digitalyibeltal.com/api/users/forgot-password",
+        "https://server-side-r4vi.onrender.com/api/users/forgot-password",
         { email },
         {
           headers: {

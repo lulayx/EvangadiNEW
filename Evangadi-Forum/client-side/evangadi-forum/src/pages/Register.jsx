@@ -209,24 +209,15 @@ function Register() {
             agreeToTerms: formData.agreeToTerms,
           };
 
-      // const response = await axios.post(
-      //   "https://evangadi-api.digitalyibeltal.com/api/users/register",
-      //   payload,
-      //   {
-      //     headers: {
-      //       "Content-Type": "application/json",
-      //     },
-      //   }
-      // );
+
 
       const response = await axios.post(
-        "https://evangadi-api.digitalyibeltal.com/api/users/register",
+        "https://server-side-r4vi.onrender.com/api/users/register",
         payload,
         {
           headers: {
             "Content-Type": "application/json",
           },
-  
         }
       );
 

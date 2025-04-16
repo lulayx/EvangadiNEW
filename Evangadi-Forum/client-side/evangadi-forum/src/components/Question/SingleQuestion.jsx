@@ -35,7 +35,7 @@ const SingleQuestion = () => {
   const fetchQuestion = async () => {
     try {
       const response = await fetch(
-        `https://evangadi-api.digitalyibeltal.com/api/questions/${questionId}`,
+        `https://server-side-r4vi.onrender.com/api/questions/${questionId}`,
         {
           headers: { Authorization: `Bearer ${token}` },
         }
@@ -83,7 +83,7 @@ const SingleQuestion = () => {
 
     try {
       const response = await fetch(
-        `https://evangadi-api.digitalyibeltal.com/api/answers/${answerId}/rate`,
+        `https://server-side-r4vi.onrender.com/api/answers/${answerId}/rate`,
         {
           method: "POST",
           headers: {
@@ -144,7 +144,7 @@ const SingleQuestion = () => {
 
     try {
       const response = await fetch(
-        `https://evangadi-api.digitalyibeltal.com/api/answers/${answerId}`,
+        `https://server-side-r4vi.onrender.com/api/answers/${answerId}`,
         {
           method: "DELETE",
           headers: {
@@ -171,7 +171,7 @@ const SingleQuestion = () => {
 
     try {
       const response = await fetch(
-        `https://evangadi-api.digitalyibeltal.com/api/questions/${questionId}`,
+        `https://server-side-r4vi.onrender.com/api/questions/${questionId}`,
         {
           method: "DELETE",
           headers: {

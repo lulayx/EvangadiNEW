@@ -16,7 +16,7 @@ const EditQuestion = () => {
     const fetchQuestion = async () => {
       try {
         const response = await fetch(
-          `https://evangadi-api.digitalyibeltal.com/api/questions/${questionId}`,
+          `https://server-side-r4vi.onrender.com/api/questions/${questionId}`,
           {
             headers: { Authorization: `Bearer ${token}` },
           }
@@ -45,7 +45,7 @@ const EditQuestion = () => {
 
     try {
       const response = await fetch(
-        `https://evangadi-api.digitalyibeltal.com/api/questions/${questionId}`,
+        `https://server-side-r4vi.onrender.com/api/questions/${questionId}`,
         {
           method: "PUT",
           headers: {

@@ -78,12 +78,12 @@ function AdminDashboard() {
     setIsLoading(true);
     try {
       const [statsRes, questionsRes] = await Promise.all([
-        axios.get("https://evangadi-api.digitalyibeltal.com/api/admin/stats", {
+        axios.get("https://server-side-r4vi.onrender.com/api/admin/stats", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
         }),
-        axios.get("https://evangadi-api.digitalyibeltal.com/api/admin/recent-questions", {
+        axios.get("https://server-side-r4vi.onrender.com/api/admin/recent-questions", {
           headers: {
             Authorization: `Bearer ${token}`,
           },

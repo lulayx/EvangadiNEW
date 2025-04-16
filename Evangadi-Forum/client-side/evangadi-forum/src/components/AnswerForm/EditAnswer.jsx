@@ -22,7 +22,7 @@ const EditAnswer = () => {
         setSuccessMessage("");
 
         const response = await fetch(
-          `https://evangadi-api.digitalyibeltal.com/api/answers/${answerId}`,
+          `https://server-side-r4vi.onrender.com/api/answers/${answerId}`,
           {
             method: "GET",
             headers: {
@@ -69,7 +69,7 @@ const EditAnswer = () => {
       setError("");
 
       const response = await fetch(
-        `https://evangadi-api.digitalyibeltal.com/api/answers/${answerId}`,
+        `https://server-side-r4vi.onrender.com/api/answers/${answerId}`,
         {
           method: "PUT",
           headers: {

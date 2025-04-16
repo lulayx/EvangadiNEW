@@ -27,7 +27,7 @@ const AskQuestion = () => {
 
     try {
       const response = await fetch(
-        "https://evangadi-api.digitalyibeltal.com/api/questions",
+        "https://server-side-r4vi.onrender.com/api/questions",
         {
           method: "POST",
           headers: {

@@ -164,7 +164,7 @@ function AdminUserRegistration() {
     try {
       // Change this line in your frontend code
       const response = await axios.post(
-        "https://evangadi-api.digitalyibeltal.com/api/admin/register-user",
+        "https://server-side-r4vi.onrender.com/api/admin/register-user",
         formData,
         {
           headers: {

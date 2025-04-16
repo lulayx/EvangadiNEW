@@ -19,7 +19,7 @@ const QuestionAnswerList = () => {
       try {
         const [questionsRes, userRes] = await Promise.all([
           axios.get(
-            "https://evangadi-api.digitalyibeltal.com/api/admin/question-full",
+            "https://server-side-r4vi.onrender.com/api/admin/question-full",
             {
               headers: {
                 Authorization: `Bearer ${token}`,
@@ -27,7 +27,7 @@ const QuestionAnswerList = () => {
             }
           ),
           axios.get(
-            "https://evangadi-api.digitalyibeltal.com/api/users/checkUser",
+            "https://server-side-r4vi.onrender.com/api/users/checkUser",
             {
               headers: {
                 Authorization: `Bearer ${token}`,
@@ -73,7 +73,7 @@ const QuestionAnswerList = () => {
   const handleSaveEdit = async (answerId) => {
     try {
       await axios.put(
-        `https://evangadi-api.digitalyibeltal.com/api/admin/answers/${answerId}`,
+        `https://server-side-r4vi.onrender.com/api/admin/answers/${answerId}`,
         {
           updatedAnswer: editedAnswer,
         },
@@ -110,7 +110,7 @@ const QuestionAnswerList = () => {
 
     try {
       await axios.delete(
-        `https://evangadi-api.digitalyibeltal.com/api/admin/answers/${answerId}`,
+        `https://server-side-r4vi.onrender.com/api/admin/answers/${answerId}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

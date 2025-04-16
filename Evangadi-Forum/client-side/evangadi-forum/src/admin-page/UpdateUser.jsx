@@ -23,7 +23,7 @@ const UpdateUser = () => {
     const fetchUserData = async () => {
       try {
         const response = await axios.get(
-          `https://evangadi-api.digitalyibeltal.com/api/admin/users/${id}`,
+          `https://server-side-r4vi.onrender.com/api/admin/users/${id}`,
           {
             headers: {
               "Content-Type": "application/json",
@@ -68,7 +68,7 @@ const UpdateUser = () => {
 
     try {
       const response = await axios.put(
-        `https://evangadi-api.digitalyibeltal.com/api/admin/users/${id}`,
+        `https://server-side-r4vi.onrender.com/api/admin/users/${id}`,
         formData,
         {
           headers: {

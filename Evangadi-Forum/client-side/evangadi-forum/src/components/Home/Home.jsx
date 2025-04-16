@@ -21,7 +21,7 @@ const Home = () => {
     const fetchQuestions = async () => {
       try {
         const response = await fetch(
-          "https://evangadi-api.digitalyibeltal.com/api/questions/all-questions",
+          "https://server-side-r4vi.onrender.com/api/questions/all-questions",
           {
             headers: {
               Authorization: `Bearer ${token}`,

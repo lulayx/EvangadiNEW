@@ -22,7 +22,7 @@ const UsersManagement = () => {
       setError(null);
       try {
         const response = await axios.get(
-          "https://evangadi-api.digitalyibeltal.com/api/admin/users",
+          "https://server-side-r4vi.onrender.com/api/admin/users",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -49,7 +49,7 @@ const UsersManagement = () => {
 
     try {
       const response = await axios.delete(
-        `https://evangadi-api.digitalyibeltal.com/api/admin/users/${id}`,
+        `https://server-side-r4vi.onrender.com/api/admin/users/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

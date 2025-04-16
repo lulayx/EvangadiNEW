@@ -23,7 +23,7 @@ const AdminQuestionManagement = () => {
       setLoading(true);
       const token = localStorage.getItem("token");
       const response = await axios.get(
-        "https://evangadi-api.digitalyibeltal.com/api/admin/questions",
+        "https://server-side-r4vi.onrender.com/api/admin/questions",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -52,7 +52,7 @@ const AdminQuestionManagement = () => {
       try {
         const token = localStorage.getItem("token");
         await axios.delete(
-          `https://evangadi-api.digitalyibeltal.com/api/admin/questions/${questionId}`,
+          `https://server-side-r4vi.onrender.com/api/admin/questions/${questionId}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -100,7 +100,7 @@ const AdminQuestionManagement = () => {
     try {
       const token = localStorage.getItem("token");
       await axios.put(
-        `https://evangadi-api.digitalyibeltal.com/api/admin/questions/${editingQuestion.question_id}`,
+        `https://server-side-r4vi.onrender.com/api/admin/questions/${editingQuestion.question_id}`,
         editForm,
         {
           headers: {

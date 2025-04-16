@@ -20,7 +20,7 @@ function App() {
     try {
       if (token) {
         const { data } = await axios.get(
-          "https://evangadi-api.digitalyibeltal.com/api/users/checkUser",
+          "https://server-side-r4vi.onrender.com/api/users/checkUser",
           {
             headers: { Authorization: `Bearer ${token}` },
           }

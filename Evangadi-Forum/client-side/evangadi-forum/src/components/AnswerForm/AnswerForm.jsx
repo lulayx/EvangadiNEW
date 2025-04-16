@@ -23,7 +23,7 @@ const AnswerForm = ({
 
     try {
       const response = await fetch(
-        `https://evangadi-api.digitalyibeltal.com/api/questions/${questionId}/answers`,
+        `https://server-side-r4vi.onrender.com/api/questions/${questionId}/answers`,
         {
           method: "POST",
           headers: {
@@ -60,7 +60,7 @@ const AnswerForm = ({
 
     try {
       const response = await fetch(
-        `https://evangadi-api.digitalyibeltal.com/api/answers/${editingAnswerId}`,
+        `https://server-side-r4vi.onrender.com/api/answers/${editingAnswerId}`,
         {
           method: "PUT",
           headers: {
@@ -98,7 +98,7 @@ const AnswerForm = ({
 
     try {
       const response = await fetch(
-        `https://evangadi-api.digitalyibeltal.com/api/answers/${answerId}`,
+        `https://server-side-r4vi.onrender.com/api/answers/${answerId}`,
         {
           method: "DELETE",
           headers: {

@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "https://evangadi-api.digitalyibeltal.com/api/users";
+const API_URL = "https://server-side-r4vi.onrender.com/api/users";
 
 // Helper function for error handling
 const handleRequest = async (request) => {
